@@ -2,37 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>1 задание</title>
+	<title>4 задание</title>
 	<style>
-		
 		.box {
-			background-image: url(1.jpg);
-			background-size: 100% 100%;
-			width: 200px;
-			height: 200px;
-			display: none;
+			background: red;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 100px;
+			left: 100px;
 		}
 	</style>
 </head>
 <body>
-	<h1>hp <span class="amog"> </span></h1>
-	<button class="bts">Нажми</button>
+	<button class="btn">Изменить</button>
 	<div class="box">
 	</div>
-
-	<script type="text/javascript">
-		let sum = 5
-		document.querySelector(".amog").innerHTML = sum
-		document.querySelector(".bts").onclick = function() {
-		sum = sum - 1 
-		 document.querySelector(".amog").innerHTML = sum
-		 if(sum == 0) {  
-		 	document.querySelector(".bts").style.display = "none"
-			document.querySelector(".amog").style.display = "none"
-			document.querySelector(".box").style.display = "block"
-		 }
-		 }
-
+	<script>
+		// Найди box и btn
+		// Сделай нажатие на кнопку
+		// Добавь box измение позиции по left когда нажимаешь на кнопку
+		// Добавь box свойство transition чтобы движение было плавным
 	
 	</script>
 </body>
