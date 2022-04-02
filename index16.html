@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+	.cic {background-color: red; height: 100px; width: 100px; border-radius: 50%; position: absolute;
+		left: 0px; top: 0px; transition: 1s;}
+</style>
+</head>
+<body>
+ <div class="cic"></div>
+<script type="text/javascript">
+	function moveCic(){
+		let rcire = document.querySelector(".cic")
+		let num = Math.random() * 989;
+		let x = Math.round(num);
+		console.log(x);
+		rcire.style.left = x + "px";
+		
+
+
+
+	
+		let numu = Math.random() * 1167;
+		let xi = Math.round(numu);
+		console.log(xi);
+		rcire.style.top = xi + "px";
+	}
+	setInterval(moveCic, 1000);
+</script>
+
+</body>
+</html>
+
+1167

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.shooter {
+			width: 80px; 
+			position: absolute; 	
+		}
+		.box {
+			background-image: url(game.png);
+			height: 1000px; 
+			background-size: 100% 100%;
+		}
+		.zombies {
+			width: 80px; 
+			position: absolute;
+
+	</style>
+</head>
+<body>	
+	
+	<div class="box" style="">
+		
+		<h5 style="position: absolute; left: 600px; top: 50px" class="score"></h5>
+
+		<!--ГОРОХИ-->
+	    <img class="shooter" src="peashooter.png"  style="top: 250px; left: 600px ; ">		
+		<img class="shooter" src="peashooter.png"  style="top: 350px; left: 600px">	
+		<img class="shooter" src="peashooter.png"  style="top: 450px; left: 600px">	
+		<img class="shooter" src="peashooter.png"  style="top: 550px; left: 600px">
+		<img class="shooter" src="peashooter.png"  style="top: 650px; left: 600px">
+
+
+		<!--ЗОМБИ-->
+		<img class="zombies" src="zombie2.png" style="top: 220px; left: 1400px">
+		<img class="zombies" src="zombie2.png" style="top: 320px; left: 1400px">
+		<img class="zombies" src="zombie2.png" style="top: 420px; left: 1400px">
+		<img class="zombies" src="zombie2.png" style="top: 520px; left: 1400px">
+		<img class="zombies" src="1.png" style="top: 620px; left: 1400px">
+	</div>
+<script>
+
+	let zombies_elem = document.querySelectorAll(".zombies")
+	let move_left = 1400; 
+	zombies_elem[0].onclick = function(){
+		move_left = move_left - 200; 
+		zombies_elem[0].style.left = move_left + "px"
+	}
+	let move_leftu = 1400
+	zombies_elem[1].onclick = function(){
+		move_leftu = move_leftu - 200
+		zombies_elem[1].style.left = move_leftu + "px"
+
+	}
+	
+	let move_leftus = 1400
+	zombies_elem[2].onclick = function(){
+		move_leftus = move_leftus - 200
+		zombies_elem[2].style.left = move_leftus + "px"
+
+	}
+
+</script>
+</body>
+</html>

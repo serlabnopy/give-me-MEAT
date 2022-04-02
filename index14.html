@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+	.amog{	width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-right:10px ;}
+	.amog2{	width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-right:10px ;}
+	.amog3{	width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-right:10px ;}
+	.amog4{	width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-right:10px ;}
+</style>
+
+</head>
+<body>
+<div > </div>
+
+
+<button class="but">зеленее</button>
+<button class="but2">позолоти</button>
+<button class="but3">согреши</button>
+<div style="display: flex;">
+<div class="amog"></div>
+<div class="amog"></div>
+<div class="amog"></div>
+<div class="amog"></div>
+</div>
+
+<script type="text/javascript">
+let boxes = document.querySelectorAll(".amog")
+document.querySelector(".but").onclick = function() {
+	for(let i=0; i<4; i = i+1 ){ 
+	 boxes[i].style.background  = "green" 
+	
+	}
+
+}
+
+
+document.querySelector(".but2").onclick = function() {
+	boxes[0].style.background  = "yellow" 
+	boxes[1].style.background  = "yellow" 
+	boxes[2].style.background  = "yellow" 
+	boxes[3].style.background  = "yellow"  
+}
+
+document.querySelector(".but3").onclick = function() {
+	boxes[0].style.background  = "black" 
+	boxes[1].style.background  = "black" 
+	boxes[2].style.background  = "black" 
+	boxes[3].style.background  = "black"   
+}
+</script>
+</body>
+</html>
