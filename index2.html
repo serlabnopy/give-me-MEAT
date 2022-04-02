@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 задание</title>
+	<style>
+		
+		.box {
+			background-image: url(1.jpg);
+			background-size: 100% 100%;
+			width: 200px;
+			height: 200px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>hp <span class="amog"> </span></h1>
+	<button class="bts">Нажми</button>
+	<div class="box">
+	</div>
+
+	<script type="text/javascript">
+		let sum = 5
+		document.querySelector(".amog").innerHTML = sum
+		document.querySelector(".bts").onclick = function() {
+		sum = sum - 1 
+		 document.querySelector(".amog").innerHTML = sum
+		 if(sum == 0) {  
+		 	document.querySelector(".bts").style.display = "none"
+			document.querySelector(".amog").style.display = "none"
+			document.querySelector(".box").style.display = "block"
+		 }
+		 }
+
+	
+	</script>
+</body>
+</html>
